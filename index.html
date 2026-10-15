@@ -1,69 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Arafat's student and web development portfolio">
-  <title>Arafat | Student Portfolio</title>
-  <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arafat's personal web developer portfolio">
+    <title>Arafat | Portfolio</title>
+    <!-- Make sure style.css matches your actual CSS filename (lowercase/uppercase) -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header" id="home">
-    <h1 class="brand">Arafat</h1>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+
+<header>
+    <div class="logo">ARAFAT<span>.</span></div>
+
+    <nav>
+        <button class="nav-btn active" data-page="home">Home</button>
+        <button class="nav-btn" data-page="about">About</button>
+        <button class="nav-btn" data-page="skills">Skills</button>
+        <button class="nav-btn" data-page="projects">Projects</button>
+        <button class="nav-btn" data-page="contact">Contact Me</button>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-text">
-        <h2 id="hero-title">I'm Arafat</h2>
-        <h3>Student &amp; Web Developer</h3>
-        <p>Welcome to my personal portfolio website. I am learning how to build beautiful websites.</p>
-        <a class="button" href="#about">Learn More</a>
-      </div>
-      <div class="hero-image">
-        <img src="arafat.jpg" alt="Arafat sitting outdoors beneath a tree">
-      </div>
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+        <div class="home-container">
+
+            <div class="home-text">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Arafat</span></h1>
+
+                <h2 class="role">Web Developer</h2>
+
+                <p class="description">
+                    Welcome to my personal website. I am super ready for
+                    web development and creating beautiful websites
+                    using HTML and CSS.
+                </p>
+
+                <div class="buttons">
+                    <button class="primary-btn" data-goto="projects">
+                        View My Work
+                    </button>
+
+                    <button class="secondary-btn" data-goto="contact">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+
+            <div class="home-photo">
+                <img src="arafat.jpg" alt="Arafat's portrait">
+            </div>
+
+        </div>
     </section>
 
-    <section class="section about-section" id="about">
-      <h2>About Me</h2>
-      <p>Hello! My name is Arafat. I am a student who loves learning new things and developing new skills. My dream is to become successful in the future.</p>
+    <!-- ABOUT -->
+    <section id="about" class="page">
+
+        <div class="section-heading">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="content-card">
+            <h3>Hello! I'm Arafat 👋</h3>
+
+            <p>
+                I am a beginner web developer who enjoys learning
+                how to create modern and beautiful websites.
+                I am building my skills step by step using HTML,
+                CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>My Goal 🎯</h3>
+
+            <p>
+                My goal is to become a professional web developer,
+                build useful websites and continue improving
+                my coding skills every day.
+            </p>
+        </div>
+
     </section>
 
-    <section class="section skills-section" id="skills">
-      <h2>My Skills</h2>
-      <div class="card-grid">
-        <article class="card"><h3>HTML</h3><p>Learning how to build websites.</p></article>
-        <article class="card"><h3>CSS</h3><p>Learning how to design beautiful websites.</p></article>
-        <article class="card"><h3>Problem Solving</h3><p>Learning new things every day.</p></article>
-      </div>
+    <!-- SKILLS -->
+    <section id="skills" class="page">
+
+        <div class="section-heading">
+            <p class="eyebrow">WHAT I AM LEARNING</p>
+            <h2>My <span>Skills</span></h2>
+            <p>These are the technologies I am learning.</p>
+        </div>
+
+        <div class="skill-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML</h3>
+                <p>Creating the structure of web pages.</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Designing colorful and responsive websites.</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:60%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Learning to make websites interactive.</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:35%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Making websites work on phones and computers.</p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:50%"></div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section class="section projects-section" id="projects">
-      <h2>My Projects</h2>
-      <div class="card-grid">
-        <article class="card"><h3>My First Website</h3><p>This is my first personal portfolio website.</p></article>
-        <article class="card"><h3>My Learning Journey</h3><p>I am learning HTML and CSS to build websites.</p></article>
-      </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="page">
+
+        <div class="section-heading">
+            <p class="eyebrow">MY RECENT WORK</p>
+            <h2>My <span>Projects</span></h2>
+            <p>Projects I am creating while learning web development.</p>
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="skill-icon">👨‍💻</div>
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A personal website that introduces me,
+                    my skills and my projects.
+                </p>
+                <button class="secondary-btn" data-goto="home">
+                    View Portfolio
+                </button>
+            </div>
+
+            <div class="project-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Responsive Website</h3>
+                <p>
+                    A website design that adapts to different
+                    screen sizes, including mobile phones.
+                </p>
+                <button class="secondary-btn" data-goto="skills">
+                    My Skills
+                </button>
+            </div>
+
+            <div class="project-card">
+                <div class="skill-icon">✉️</div>
+                <h3>Contact Page</h3>
+                <p>
+                    A simple contact section that helps visitors
+                    reach me by email.
+                </p>
+                <button class="secondary-btn" data-goto="contact">
+                    Contact Me
+                </button>
+            </div>
+
+            <div class="project-card">
+                <div class="skill-icon">🚀</div>
+                <h3>Future Projects</h3>
+                <p>
+                    I will add more projects as I learn new
+                    web development skills.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <h2>Contact Me</h2>
-      <p>If you want to contact me, send me an email.</p>
-      <!-- Replace your-email@example.com with your real email address. -->
-      <a class="button" href="mailto:your-email@example.com">Send Me an Email</a>
-    </section>
-  </main>
+    <!-- CONTACT -->
+    <section id="contact" class="page">
 
-  <footer>
-    <p>© 2026 Arafat | My Personal Portfolio</p>
-  </footer>
+        <div class="section-heading">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Contact <span>Me</span></h2>
+            <p>Feel free to contact me by email.</p>
+        </div>
+
+        <div class="content-card contact-card">
+            <div class="skill-icon">✉️</div>
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                If you want to contact me, send me an email.
+            </p>
+
+            <p>
+                Email:
+                <a id="email-link" href="mailto:bonichala35@gmail.com">
+                    bonichala35@gmail.com
+                </a>
+            </p>
+
+            <a id="email-button"
+               class="primary-btn"
+               href="mailto:bonichala35@gmail.com">
+                Send Me an Email
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Arafat. All Rights Reserved.</p>
+    <p>Built with HTML, CSS &amp; JavaScript 💙</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navButtons = document.querySelectorAll(".nav-btn");
+    const pages = document.querySelectorAll(".page");
+    const gotoButtons = document.querySelectorAll("[data-goto]");
+
+    function showPage(pageId) {
+        const selectedPage = document.getElementById(pageId);
+
+        if (!selectedPage) {
+            return;
+        }
+
+        pages.forEach(function (page) {
+            page.classList.remove("active");
+        });
+
+        navButtons.forEach(function (button) {
+            button.classList.remove("active");
+        });
+
+        selectedPage.classList.add("active");
+
+        const activeButton = document.querySelector(
+            '.nav-btn[data-page="' + pageId + '"]'
+        );
+
+        if (activeButton) {
+            activeButton.classList.add("active");
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    navButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            showPage(button.dataset.page);
+        });
+    });
+
+    gotoButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            showPage(button.dataset.goto);
+        });
+    });
+
+    /* Email configuration */
+    const email = "bonichala35@gmail.com";
+
+    const emailLink = document.getElementById("email-link");
+    const emailButton = document.getElementById("email-button");
+
+    if (emailLink) {
+        emailLink.textContent = email;
+        emailLink.href = "mailto:" + email;
+    }
+    
+    if (emailButton) {
+        emailButton.href = "mailto:" + email;
+    }
+
+});
+
+/* Profile Photo Zoom Toggle */
+const photo = document.querySelector(".home-photo img");
+
+if (photo) {
+    photo.addEventListener("click", function () {
+        this.classList.toggle("zoomed");
+    });
+}
+</script>
+
 </body>
 </html>
